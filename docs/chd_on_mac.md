@@ -43,5 +43,18 @@ If you have a bunch of sub-directories in the current directory, and you'd like 
 chdall() { for dir in */; do [ -f "${dir%/}/${dir%/}.cue" ] && chdman createcd -i "${dir%/}/${dir%/}.cue" -o "${dir%/}.chd"; done; }
 ```
 
+You can then run this script in a given directory by simply running `chdall` on the command prompt.
+
+
 # Compressing iso files
-This works exactly the same as with bin-cue files
+This works exactly the same as with bin-cue files.  Just replace `cue` with `iso` and pretend the `bin` files don't exist (which should be easy because with `iso` files they don't).
+
+```bash
+chdman createcd -i X.iso -o X.chd
+```
+
+For a batch of `.iso`s in the current directory, you could use this script:
+```bash
+chdalliso() { for iso in *.iso; do chdman createcd -i "${iso}" -o "${iso%.iso}.chd"; done; }
+```
+(which you can again add to your `.bash_profile` if you wish to use it regularly, and which can be triggered by running `chdalliso` on the command prompt)
