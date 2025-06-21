@@ -4,6 +4,7 @@ Guide for working with CHD (Compressed Hunks of Data) files on macOS systems.
 
 ## Prerequisites
 
+- The ability to run commands in the `terminal` (it's usually in your Applications folder, in the Utilities subfolder).  You can copy from these text boxes and paste into the terminal.
 - [Install Homebrew](https://brew.sh/) - Package manager for macOS
 - At the time of writing, this command will install homebrew:
 ```bash
