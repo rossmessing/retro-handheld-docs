@@ -38,7 +38,7 @@ chdman createcd -i X/X.cue -o X.chd
 ```
 and that'll create X.chd in the directory you're in.
 
-Note that typing long filenames with spaces and parentheses on can be challenging.  Your life may be made easier by adding `bash-completion` to your shell, which allows you to start typing a filename and hit tab to complete it.  To do so run
+Note that typing long filenames with spaces and parentheses on can be challenging.  Your life may be made easier by adding `bash-completion` to your shell, which allows you to start typing a filename and hit tab to complete it.  To do so run:
 ```bash
 brew install bash-completion
 ```
