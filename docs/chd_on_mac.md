@@ -54,10 +54,16 @@ You can then run this script in a given directory by simply running `chdall` on 
 # Compressing iso files
 This works exactly the same as with bin-cue files.  Just replace `cue` with `iso` and pretend the `bin` files don't exist (which should be easy because with `iso` files they don't).
 
-Additionally, you may want to use `createdvd` instead of `createcd` for compressing PSP isos, and potentially other systems that use DVD rather than CDs, as long as the emulator supports it (notably, some PS2 emulators do not).
+Additionally, you may want to use `createdvd` instead of `createcd` for compressing PSP isos (as far as I know, this doesn't apply to other systems like PS2).  In this case, you want another argument as well.
 
 ```bash
 chdman createcd -i X.iso -o X.chd
+```
+
+or, for PSP isos:
+
+```bash
+chdman createdvd -hs 2048 -i X.iso -o X.chd
 ```
 
 For a batch of `.iso`s in the current directory, you could use this script:
