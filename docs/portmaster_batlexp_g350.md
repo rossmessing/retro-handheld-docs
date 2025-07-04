@@ -1,9 +1,26 @@
 # Portmaster on the Batlexp G350 with PAN4ELEC
 
+This includes an incredibly basic set of setup instructions, and more detailed instructions for portmaster.
+
 How to get Portmaster working on the Batlexp G350 running [PAN4ELEC](https://github.com/Kegg1701/P4ELEC).  
 This is a challenge because the G350 doesn't have wifi / any easy way or free way to get internet access.
 It's likely that these directions will work for other linux CFW for the G350, but I can't confirm that.
 It's likely that these directions will work for the R36S, but I can't confirm that.
+
+# Installing PAN4ELEC
+
+Briefly, to install [PAN4ELEC](https://github.com/Kegg1701/P4ELEC/), download the newest [release](https://github.com/Kegg1701/P4ELEC/releases/) (you want the file ending in `G350.img.gz`).
+
+* Burn it to an sd card using [rufus](https://rufus.ie/) or your preferred sd card image writer.
+* Put it in your G350, wait a few minutes while the OS installs.
+
+# Adding Bios / Roms
+
+* Turn the unit off, and insert the card back in your computer.  
+* There will be two drives - you want the games drive.
+* Put your bios files into `/roms/bios`
+* Put your roms into the relevant directories in `/roms/`
+* If you want to change the default hotkeys (or anything else), change them in retroarch.
 
 # Install Portmaster
 
