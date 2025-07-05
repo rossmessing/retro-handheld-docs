@@ -55,7 +55,7 @@ Put your card back in your computer, and following the directions on the portmas
 Several ports I like, like Stardew Valley and Celeste, require the Mono lib.
 Some of them complain about the lack of it.  Others just fail to launch without it.
 
-You can grab it [here](https://github.com/PortsMaster/PortMaster-Hosting/releases).  
+You can grab it (and other libraries) [here](https://portmaster.games/runtimes.html).  
 Download the `mono-6.12.0.122-aarch64.squashfs` file (version may change).
 Copy it to `/roms/ports/PortMaster/libs`.
 
